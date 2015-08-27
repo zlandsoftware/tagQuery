@@ -14,10 +14,30 @@
 		<link href="css/stylesheets.css" rel="text/css" media="screen" charset="utf-8"/>
 		<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css' type='text/css' media='screen'>
 		
-		
+		<meta name="description" content="Search for instagram images"/>
+		<meta name="author" content="Matheus inácio Pedro"/>
 	</head>
 	<body>
-		<div ="search">
+		<div ="container">
+			<div class="row">
+				<div class="span12">
+					<form id='search'>
+						<div class="input-append">
+							<input class="search-tag" type="text" tabindex="1" placeholder="Type the tag here"/>
+							<button class="btn" id="search-button" dir="ltr" tabindex="2" type="submit">
+								<i class="icon-search"></i>
+							</button>
+						</div>
+					</form>
+					
+					<div id="photos-wrap">
+					</div>
+					
+					<div id="paginate">
+						<a class="btn" style="display:none;" data-max-tag-id="" href="#">Carregar mais...</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
